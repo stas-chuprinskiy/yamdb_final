@@ -1,4 +1,4 @@
-![API YaMDB workflow](https://github.com/github/stas-chuprinskiy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
+[![API YaMDB workflow](https://github.com/stas-chuprinskiy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/stas-chuprinskiy/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 
 # API YaMDB - отзывы и рейтинги на любимые произведения
