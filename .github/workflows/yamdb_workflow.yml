@@ -71,7 +71,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         source: "infra/docker-compose.yaml"
-        target: "dev/yamdb_final"
+        target: "dev/yamdb_final/docker-compose.yaml"
 
     - name: Copy nginx settings via ssh
       uses: appleboy/scp-action@master
@@ -81,7 +81,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         source: "infra/nginx/default.conf"
-        target: "dev/yamdb_final/nginx"
+        target: "dev/yamdb_final/nginx/default.conf"
 
     - name: Executing ssh commands to deploy
       uses: appleboy/ssh-action@master
