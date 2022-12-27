@@ -25,7 +25,7 @@
 1. Клонируйте репозиторий:
 
 ```
-git clone git@github.com:stas-chuprinskiy/infra_sp2.git
+git clone git@github.com:stas-chuprinskiy/yamdb_final.git
 ```
 
 2. Перейдите в папку `infra/`. В файле `.env` определите параметры подключения к **postgres**:
