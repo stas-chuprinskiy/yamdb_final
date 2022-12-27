@@ -2,7 +2,8 @@ name: API YaMDB workflow
 
 on:
   push:
-    branches: [ master ]
+    branches:
+    - master
 
 jobs:
   app_tests:
@@ -29,7 +30,7 @@ jobs:
 
     - name: Test with app tests
       run:
-        python3 api_yamdb/manage.py test
+        pytest
 
   build:
     runs-on: ubuntu-latest
