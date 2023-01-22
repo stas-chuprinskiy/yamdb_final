@@ -58,7 +58,7 @@ jobs:
 
   notify:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: build  # deploy
 
     steps:
     - name: Send notification in telegram
