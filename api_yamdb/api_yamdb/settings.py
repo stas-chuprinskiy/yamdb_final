@@ -21,8 +21,8 @@ INSTALLED_APPS = [
     'reviews',
     'users',
 
-    'rest_framework',
     'django_filters',
+    'rest_framework',
     'rest_framework_simplejwt',
 ]
 
@@ -100,10 +100,6 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = '/media/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
@@ -130,15 +126,16 @@ SIMPLE_JWT = {
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+
     'formatters': {
-        'console': {
+        'formatter': {
             'format': '%(asctime)s | %(levelname)s | %(message)s'
         },
     },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
-            'formatter': 'console'
+            'formatter': 'formatter'
         },
     },
     'loggers': {

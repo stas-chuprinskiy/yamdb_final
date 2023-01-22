@@ -2,16 +2,16 @@ import csv
 import logging
 import os
 
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 
-from api_yamdb.settings import BASE_DIR
 from reviews.models import Category, Comment, Genre, Review, Title, TitleGenre
 from users.models import User
 
 logger = logging.getLogger(__name__)
 
-DATA_PATH = os.path.join(BASE_DIR, 'static/data')
+DATA_PATH = os.path.join(settings.BASE_DIR, 'static/data')
 
 FILES_MODELS = {
     'users.csv': get_user_model(),

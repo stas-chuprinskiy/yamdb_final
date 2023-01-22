@@ -144,3 +144,7 @@ dmypy.json
 .history/
 
 .mypy_cache
+
+# API YaMDB
+*/sent_emails/
+*/requirements-dev.txt

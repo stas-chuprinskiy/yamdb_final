@@ -15,14 +15,14 @@ from rest_framework.permissions import (AllowAny, IsAuthenticated,
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from .filters import TitleFilter
-from .permissions import (IsAdmin, IsAdminModeratorAuthorOrReadOnly,
-                          IsAdminOrReadOnly)
-from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ReviewSerializer,
-                          SignupSerializer, TitleReadSerializer,
-                          TitleWriteSerializer, TokenSerializer,
-                          UserSerializer)
+from api.filters import TitleFilter
+from api.permissions import (IsAdmin, IsAdminModeratorAuthorOrReadOnly,
+                             IsAdminOrReadOnly)
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, ReviewSerializer,
+                             SignupSerializer, TitleReadSerializer,
+                             TitleWriteSerializer, TokenSerializer,
+                             UserSerializer)
 from reviews.models import Category, Genre, Review, Title
 
 
